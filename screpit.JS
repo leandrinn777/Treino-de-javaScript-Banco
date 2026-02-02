@@ -12,8 +12,8 @@ function EntrarPagina() {
     }
 }
 
-function VoltarPagina(){
-    alert("Você sera redirecinado para pagina inical.") ;
-    window.location.href = "index.html" ;
+function VoltarPagina() {
+    alert("Você sera redirecinado para pagina inical.");
+    window.location.href = "index.html";
 
 }

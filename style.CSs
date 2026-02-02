@@ -41,12 +41,11 @@ h1:last-of-type:hover {
     transform: scale(1.05);
 }
 
-
 button:hover {
     background-color: #00c090;
     transform: scale(1.05);
-    
-}  
+
+}
 
 button {
     background-color: #00e0a1;
@@ -98,8 +97,6 @@ h2:last-of-type:hover {
     transform: scale(1.05);
 }
 
-
-
 .login-box h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -132,26 +129,27 @@ h2:last-of-type:hover {
 .login-box button:hover {
     background-color: #00e6b8;
     transform: scale(1.05);
-    
+
 }
 
 img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .login-box {
+}
+
+.login-box {
     width: 90%;
     max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  @media (max-width: 768px) {
-    h1, h2 {
-      font-size: 1.5rem;
-      text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
-  }
-  
+}
