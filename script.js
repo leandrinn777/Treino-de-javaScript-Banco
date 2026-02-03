@@ -1,18 +1,27 @@
 function EntrarPagina() {
-    var nome_usuario = document.getElementById('inpUsuario').value
-    var email_usuario = document.getElementById('inpEmail').value
-    var senha_usuario = document.getElementById('inpSenha').value
+    const email = document.getElementById("inpEmail").value.trim().toLowerCase();
+    const usuario = document.getElementById("inpUsuario").value.trim();
+    const senha = document.getElementById("inpSenha").value.trim();
+    const botao = document.getElementById("btnEntrar");
 
-    if (
-        email_usuario === "leandroaugutovl2005@gmail.com" &&
-        nome_usuario === "Leandro" &&
-        senha_usuario === "123"
-    ) {
-        alert("Usuário logado com sucesso!");
-        window.location.href = "ContaBancaria.html";
-    } else {
-        alert("Usuário, email ou senha incorretos. Tente novamente.");
-    }
+    botao.classList.add("loading");
+    botao.disabled = true;
+
+    setTimeout(() => {
+        if (
+            email === "leandroaugustovl2005@gmail.com" &&
+            usuario === "Leandro" &&
+            senha === "123"
+
+        ) {
+            window.location.href = "ContaBancaria.html";
+            alert("Loading concluido")
+        } else {
+            alert("Usuário, email ou senha incorretos!");
+            botao.classList.remove("loading");
+            botao.disabled = false;
+        }
+    }, 2000); // tempo da animação
 }
 
 function VoltarPagina() {

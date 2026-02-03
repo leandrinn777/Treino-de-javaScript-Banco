@@ -153,3 +153,34 @@ img {
         text-align: center;
     }
 }
+
+/* Loader escondido por padrão */
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    display: none;
+    animation: girar 1s linear infinite;
+    margin: auto;
+}
+
+/* Botão em loading */
+button.loading .btn-text {
+    display: none;
+}
+
+button.loading .loader {
+    display: block;
+}
+
+/* Animação */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

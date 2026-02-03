@@ -15,14 +15,22 @@
     <img src="pngimg.com - bitcoin_PNG39.png" alt="png-cripton" width="700px">
 
     <h1>Bem vindo ao Bbank </h1>
-    <p id="Indice"> Seu banco de cripto Moeda</p> <br><br>
+    <p> Seu banco de cripto Moeda</p> <br><br>
 
     <div class="login-box">
-        <input type="inpEmail" type="email" placeholder="Email"><br> <br>
+        <input id="inpEmail" type="email" placeholder="Email"><br> <br>
         <input id="inpUsuario" type="text" placeholder="Usuário"><br> <br>
         <input id="inpSenha" type="password" placeholder="Senha"><br> <br>
-        <button onclick="EntrarPagina()">Entrar</button>
+        
     </div>
+
+
+    <button id="btnEntrar" onclick="EntrarPagina()">
+        <span class="btn-text">Entrar</span>
+        <span class="loader"></span>
+    </button>
+
+
 
     <script src="script.js"></script>
 </body>
